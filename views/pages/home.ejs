@@ -1,0 +1,8 @@
+<%- include('../partials/header'); %>
+
+    <main class="main main-home container">
+        <h2 class="main-h2 text-center text-capitalize">welcome to my wine page!</h2>
+        <img src="<%= data[Math.floor(Math.random() * data.length)].image %>" alt="home image" class="img-fluid home-image">
+    </main>
+
+<%- include('../partials/footer'); %>

@@ -1,0 +1,74 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: rgb(34, 32, 32);
+    color: whitesmoke;
+    font-family: 'Raleway', sans-serif;
+}
+
+.main-home {
+    height: 73vh;
+
+}
+
+.main-home .home-image {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    margin-top: 50px;
+}
+
+.error-page {
+    background-color: beige;
+    height: 100vh;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+}
+
+.error-page h1 {
+    color: rgb(85, 18, 18);
+    text-transform: uppercase;
+}
+
+.error-page a{
+    text-transform: capitalize;
+    color: rgb(165, 26, 26);
+}
+
+.error-page .text {
+    background-color: aliceblue;
+    width: 32%;
+    height: 20%;
+    box-shadow: 10px 10px 10px black;
+}
+
+.main-wines {
+    background-color: darkgray;
+}
+
+.main-wines h2 {
+    padding-top: 50px;
+    border-bottom: 1px solid wheat;
+}
+
+.main-single {
+    background: rgb(94, 87, 87);
+}
+
+.btn {
+    border: 1px solid wheat;
+    color: azure;
+    font-size: 1.3em;
+}
+
+.btn:hover {
+    background-color: whitesmoke;
+    color: black;
+    border: 2px solid wheat;
+}

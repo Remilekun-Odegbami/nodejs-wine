@@ -1,0 +1,31 @@
+<%- include('../partials/header'); %>
+
+<main class="main main-single container">
+    <h2 class="main-h2 text-center"><%= name %></h2>
+
+
+    <!-- prev and next -->
+
+    <section class="prev-and-next d-flex justify-content-around">
+        <p class="prev">
+            <% if(data.id > 1) { %>
+                <a href="/wines/<%= data.id - 1 %>" class="btn btn-large">Prev</a>
+            <% } %>
+        </p>
+        <p class="next">
+            <% if(data.id <= count) { %>
+                <a href="/wines/<%= data.id + 1 %>" class="btn btn-large" >Next</a>
+            <% } %>
+        </p>
+    </section>
+    <section class="section section-single d-flex justify-content-center">
+
+        <figure class="figure figure-single">
+            <img src="<%= data.image %>" alt="<%= data.title %>" class="img-fluid single-img">
+            <figcaption class="figcaption text-white"> Wine Name: <%= data.wine %></figcaption>
+            <figcaption class="figcaption text-white"> Location: <%= data.location %></figcaption>
+        </figure>
+    </section>
+</main>
+
+<%- include('../partials/footer'); %>
